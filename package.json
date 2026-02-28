@@ -1,0 +1,68 @@
+{
+    "name": "mv3-migrate",
+    "version": "0.1.0",
+    "description": "Automatically migrate Chrome extensions from Manifest V2 to Manifest V3. CLI tool + library for background page → service worker, browserAction → action, and webRequest → declarativeNetRequest conversions.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "manifest-v3",
+        "mv3",
+        "mv2",
+        "migration",
+        "chrome-extension",
+        "manifest",
+        "service-worker",
+        "declarative-net-request",
+        "browser-action",
+        "cli",
+        "convert",
+        "upgrade"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/mv3-migrate.git"
+    },
+    "homepage": "https://github.com/theluckystrike/mv3-migrate",
+    "bugs": {
+        "url": "https://github.com/theluckystrike/mv3-migrate/issues"
+    },
+    "bin": {
+        "mv3-migrate": "./dist/cli.js"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "lint": "eslint src --ext .ts",
+        "lint:fix": "eslint src --ext .ts --fix",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "prepublishOnly": "npm run build && npm test"
+    },
+    "dependencies": {
+        "commander": "^12.0.0",
+        "glob": "^10.3.10",
+        "chalk": "^4.1.2"
+    },
+    "devDependencies": {
+        "@types/glob": "^8.1.0",
+        "@types/jest": "^29.5.12",
+        "@types/node": "^20.11.0",
+        "@typescript-eslint/eslint-plugin": "^6.19.1",
+        "@typescript-eslint/parser": "^6.19.1",
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^9.1.0",
+        "jest": "^29.7.0",
+        "prettier": "^3.2.4",
+        "ts-jest": "^29.1.2",
+        "typescript": "^5.3.3"
+    }
+}
