@@ -4,11 +4,14 @@ about: Suggest a feature or improvement
 labels: enhancement
 ---
 
-## Feature Description
-A clear description of the feature you'd like.
+FEATURE DESCRIPTION
 
-## Use Case
+A clear description of the feature you would like.
+
+USE CASE
+
 Why is this feature needed? What problem does it solve?
 
-## Proposed Solution
+PROPOSED SOLUTION
+
 How should this feature work?

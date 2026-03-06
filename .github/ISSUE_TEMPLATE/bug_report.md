@@ -4,20 +4,25 @@ about: Report a bug or unexpected behavior
 labels: bug
 ---
 
-## Bug Description
+BUG DESCRIPTION
+
 A clear description of what the bug is.
 
-## Steps to Reproduce
+STEPS TO REPRODUCE
+
 1. Step 1
 2. Step 2
 
-## Expected Behavior
+EXPECTED BEHAVIOR
+
 What you expected to happen.
 
-## Actual Behavior
+ACTUAL BEHAVIOR
+
 What actually happened.
 
-## Environment
+ENVIRONMENT
+
 - Node.js version:
 - OS:
-- Package version:
+- mv3-migrate version:
