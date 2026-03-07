@@ -9,7 +9,9 @@ Automatically migrate Chrome extensions from Manifest V2 to Manifest V3. Analyze
 
 Built by [Zovo](https://zovo.one). We migrated 18+ extensions to Manifest V3 with this exact tool.
 
-INSTALL
+<!-- TODO: Add screenshot -->
+
+## Install
 
 ```bash
 npm install -g mv3-migrate
@@ -21,11 +23,11 @@ Or run directly with npx.
 npx mv3-migrate analyze ./my-extension
 ```
 
-USAGE
+## Usage
 
 The CLI has two commands, analyze and migrate.
 
-Analyze your extension
+### Analyze your extension
 
 Scan an MV2 extension directory and get a detailed migration report.
 
@@ -39,7 +41,7 @@ Save the report to a file.
 mv3-migrate analyze ./my-extension -o migration-report.md
 ```
 
-Migrate your manifest
+### Migrate your manifest
 
 Preview changes with a dry run.
 
@@ -59,7 +61,7 @@ Skip the backup if you want.
 mv3-migrate migrate ./my-extension --no-backup
 ```
 
-WHAT GETS MIGRATED
+## What Gets Migrated
 
 | MV2 Pattern | MV3 Conversion |
 |-------------|----------------|
@@ -74,7 +76,7 @@ WHAT GETS MIGRATED
 | CSP as string | CSP as object with `extension_pages` |
 | `web_accessible_resources` (flat array) | Object format with `resources` and `matches` |
 
-LIBRARY API
+## Library API
 
 Use mv3-migrate programmatically in your own tools.
 
@@ -96,13 +98,13 @@ console.log('Changes:', result.changes);
 console.log('Warnings:', result.warnings);
 ```
 
-Exported types
+### Exported types
 
 - `AnalysisResult` contains the full analysis with issues and stats
 - `MigrationIssue` represents a single issue with severity, category, description, and action
 - `MigrationResult` holds the migrated manifest, list of changes, and warnings
 
-DEVELOPMENT
+## Development
 
 ```bash
 git clone https://github.com/theluckystrike/mv3-migrate.git
@@ -124,17 +126,17 @@ Watch mode for development.
 npm run dev
 ```
 
-RELATED PROJECTS
+## Related Projects
 
 - [chrome-extension-starter-mv3](https://github.com/theluckystrike/chrome-extension-starter-mv3) - Start fresh with an MV3 template
 - [chrome-storage-plus](https://github.com/theluckystrike/chrome-storage-plus) - Enhanced Chrome storage wrapper
 - [tab-manager-api](https://github.com/theluckystrike/tab-manager-api) - Chrome tabs API wrapper
 - [json-toolkit-cli](https://github.com/theluckystrike/json-toolkit-cli) - JSON CLI toolkit
 
-LICENSE
+## License
 
 MIT. See [LICENSE](LICENSE) for details.
 
 ---
 
-Built by [Zovo](https://zovo.one)
+Built by [theluckystrike](https://github.com/theluckystrike) — [zovo.one](https://zovo.one)
